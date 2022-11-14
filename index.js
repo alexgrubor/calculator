@@ -1,8 +1,8 @@
 
 class Calculator{
     constructor(){
-        this.pi= 3.141592653589793;
-        this.e= 2.718281828459045
+        this._pi = Math.PI
+        this._e = Math.E
     }
      //getter
      get pi(){
@@ -10,8 +10,7 @@ class Calculator{
     }
 
     get e(){
-        return this._e
-    }
+        return this._e}
     //methods
     
     add (num1,num2){ 
@@ -62,3 +61,4 @@ console.log(calculator.elevate(2, 3))
 console.log(calculator.remainder(4, 0))
 console.log(calculator.squareRoot(4))
 console.log(calculator.ratio(4, 2, 200))
+console.log(calculator.e)
