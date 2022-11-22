@@ -17,6 +17,9 @@ class Calculator{
         return num1 + num2
     }
     subtract(num1,num2) {
+        if (num2 < 0) {
+            return num1 + (num2)
+        }
         return num1 - num2
     }
     multiply(num1,num2) {
@@ -53,12 +56,12 @@ class Calculator{
 let calculator = new Calculator()
 
 //Testing methods 
-console.log(calculator.add(-1, 3)) 
-console.log(calculator.subtract(1, 3))
-console.log(calculator.multiply(2, 3))
-console.log(calculator.divide(2, 3))
-console.log(calculator.elevate(2, 3))
-console.log(calculator.remainder(4, 0))
-console.log(calculator.squareRoot(4))
-console.log(calculator.ratio(4, 2, 200))
-console.log(calculator.e)
+//console.log(calculator.add(-1, 3)) 
+console.log(calculator.subtract(1, -10))
+// console.log(calculator.multiply(2, 3))
+// console.log(calculator.divide(2, 3))
+// console.log(calculator.elevate(2, 3))
+// console.log(calculator.remainder(4, 0))
+// console.log(calculator.squareRoot(4))
+// console.log(calculator.ratio(4, 2, 200))
+// console.log(calculator.e)
